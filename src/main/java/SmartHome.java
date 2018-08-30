@@ -18,8 +18,8 @@ public class SmartHome {
     }
 
     @Bean
-    public SterownikPieca sterownikPieca(StacjaPogodowa stacjaPogodowa) {
-        SterownikPieca sterownikPieca = new SterownikPieca(stacjaPogodowa);
+    public SterownikPieca sterownikPieca(SterownikGlosnika sterownikGlosnika,StacjaPogodowa stacjaPogodowa) {
+        SterownikPieca sterownikPieca = new SterownikPieca(sterownikGlosnika,stacjaPogodowa);
         return sterownikPieca;
     }
 

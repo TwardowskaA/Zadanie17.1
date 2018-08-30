@@ -20,13 +20,12 @@ public class StacjaPogodowa {
 
     public static boolean getWeather(){
         Random random = new Random();
-        boolean a = random.nextBoolean();
-        boolean b = random.nextBoolean();
-        if(random.nextBoolean() == a){
-            System.out.print("jest słonecznie. Zapowiada sie dobry dzień");
-        } else if(random.nextBoolean() == b){
-            System.out.print("jest pochmurno. Zapowiada sie zły dzień");
+
+        if(random.nextBoolean() == true){
+            System.out.print("jest słonecznie");
+        } else {
+            System.out.print("jest pochmurno");
         }
-        return a || b;
+        return random.nextBoolean();
     }
 }
